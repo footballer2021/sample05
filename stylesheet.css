@@ -1,0 +1,198 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: #f4f9ff;
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1020px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.logo-wrapper__margin {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.logo-wrapper .logo {
+  max-width: 213px;
+}
+
+.main-visual {
+  background-image: url(img/mainvisual.JPG);
+  background-size: cover;
+  background-position: center;
+  height: calc(41.28vw - 12.8px);
+}
+
+.index__margin {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.index_background {
+  background-color: white;
+  max-width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.index-wrapper {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 51px;
+}
+
+.index-wrapper__index-item {
+  padding-left: 20px;
+}
+
+.index__item {
+  list-style-type: decimal;
+}
+
+.index__item-margin:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.detail__margin {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.detail_background {
+  max-width: 600px;
+}
+
+.detail__head {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .detail__head {
+    width: 295px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.detail-image {
+  max-width: 270px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 1024px) {
+  .detail-image {
+    max-width: 295px;
+  }
+}
+
+.detail-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .detail-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.detail-inner .image-wrapper {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .detail-inner__guide {
+    margin-top: 25px;
+  }
+}
+
+.detail-inner .guide {
+  max-width: 270px;
+}
+
+@media (max-width: 1024px) {
+  .detail-inner .guide {
+    max-width: 295px;
+  }
+}
+
+.detail-inner .guide__head {
+  margin: 0;
+}
+
+.detail-inner .guide .book-info-wrapper {
+  border-top: solid 1px #DEDEDE;
+  border-bottom: solid 1px #DEDEDE;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.detail-inner .guide__book-info-wrapper {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.detail-inner .guide .book-info {
+  font-size: 14px;
+}
+
+.detail-inner .guide__book-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 21px;
+      grid-template-rows: 21px;
+  -ms-grid-columns: 65px 168px;
+      grid-template-columns: 65px 168px;
+}
+
+.detail-inner .guide .topic {
+  font-size: 14px;
+}
+
+.detail-inner .guide .link-wrapper {
+  font-size: 14px;
+}
+
+.detail-inner .guide__link-wrapper {
+  margin-top: 20px;
+}
+
+.footer {
+  font-size: 10px;
+  width: 600px;
+  margin: 196px auto 15px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 295px;
+    margin-top: 128px;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
