@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    background-color: #f4f9ff;
+    font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media(max-width: 1020px){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.logo-wrapper{
+
+    &__margin{
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+
+    .logo{
+        max-width: 213px;
+    }
+
+}
+
+.main-visual{
+    background-image: url(img/mainvisual.JPG);
+    background-size: cover;
+    background-position: center;
+    height: calc(41.28vw - 12.8px);
+}
+
+.index{
+    &__margin{
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left:auto;
+    }
+
+    &_background{
+        background-color: white;
+        max-width: 1000px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &-wrapper{
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 40px;
+        padding-right: 51px;
+
+        &__index-item{
+            padding-left:20px;
+        }
+    }
+
+    
+
+    &__item{
+        list-style-type:decimal;
+
+        &-margin:not(:last-child){
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+.detail{
+   
+    &__margin{
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left:auto;
+    }
+
+    &_background{
+        max-width: 600px;
+    }
+
+    &__head{
+        margin-bottom: 10px;
+        @media(max-width: 1024px){
+            width: 295px;
+            margin-right: auto;
+            margin-left: auto;
+    }
+    }
+
+    &-image{
+        max-width:270px;
+        vertical-align: bottom;
+
+        @media(max-width: 1024px){
+            max-width: 295px;
+        }
+    }
+
+    &-inner{
+        display: flex;
+        max-width: 600px;
+        justify-content: space-between;
+
+        @media(max-width: 1024px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-wrapper{
+            margin:0;
+        }
+
+        &__guide{
+            @media(max-width: 1024px){
+                margin-top: 25px;
+            }
+        }
+
+        .guide{
+            max-width: 270px;
+
+            @media(max-width: 1024px){
+                max-width: 295px;
+            }
+
+            &__head{
+                margin: 0;
+
+                
+             }
+
+            .book-info-wrapper{
+                border-top:solid 1px #DEDEDE;
+                border-bottom:solid 1px #DEDEDE;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            &__book-info-wrapper{
+                margin-top: 20px;
+                margin-bottom: 25px;
+            }
+
+            .book-info{
+                font-size: 14px;
+            }
+
+        
+            &__book-info{
+                display: grid;
+                grid-template-rows: 21px;
+                grid-template-columns: 65px 168px;
+            }
+
+            .topic{
+                font-size: 14px;
+            }
+
+            .link-wrapper{
+                font-size: 14px;
+            }
+
+            &__link-wrapper{
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+.footer{
+    font-size: 10px;
+    width: 600px;
+    margin:196px auto 15px;
+    
+    @media(max-width: 1024px){
+        max-width: 295px;
+        margin-top: 128px;
+    }
+}
