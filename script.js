@@ -1,5 +1,7 @@
 "use strict";
 
+alert("デモサイトです");
+
 $(function(){
 
 	function loadImages(){
