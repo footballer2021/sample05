@@ -1,7 +1,3 @@
-
-
-alert("デモサイトです");
-
 $(function(){
 
 	function loadImages(){
