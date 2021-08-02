@@ -3,12 +3,14 @@ body {
   margin: 0;
   background-color: #f4f9ff;
   font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  display: none;
 }
 
 @media (max-width: 1020px) {
@@ -32,6 +34,10 @@ body {
   background-size: cover;
   background-position: center;
   height: calc(41.28vw - 12.8px);
+}
+
+.main {
+  display: none;
 }
 
 .index__margin {
@@ -77,16 +83,15 @@ body {
   max-width: 600px;
 }
 
-.detail__head {
-  margin-bottom: 10px;
+@media (max-width: 1024px) {
+  .detail_background {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
-@media (max-width: 1024px) {
-  .detail__head {
-    width: 295px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.detail__head {
+  margin-bottom: 10px;
 }
 
 .detail-image {
@@ -96,7 +101,8 @@ body {
 
 @media (max-width: 1024px) {
   .detail-image {
-    max-width: 295px;
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -138,7 +144,8 @@ body {
 
 @media (max-width: 1024px) {
   .detail-inner .guide {
-    max-width: 295px;
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -187,12 +194,27 @@ body {
   font-size: 10px;
   width: 600px;
   margin: 196px auto 15px;
+  display: none;
 }
 
 @media (max-width: 1024px) {
   .footer {
-    max-width: 295px;
+    width: 100vw;
+    max-width: 600px;
     margin-top: 128px;
   }
+}
+
+@media (max-width: 680px) {
+  .footer {
+    margin-left: 40px;
+  }
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
